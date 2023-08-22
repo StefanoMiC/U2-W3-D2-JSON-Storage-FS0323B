@@ -1,0 +1,13 @@
+const obj = {
+  name: "Stefano",
+  surname: "Miceli",
+  age: 30,
+  teaching: true,
+  location: {
+    state: "IT",
+    region: "FVG",
+    latitude: 35.19282,
+    longitude: 12.0
+  },
+  skills: ["CSS", "JS", "React"]
+};

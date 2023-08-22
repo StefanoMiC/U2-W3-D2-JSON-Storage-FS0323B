@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html.dark {
+            color-scheme: dark;
+        }
+
+        #content {
+            display: flex;
+        }
+
+        #content>* {
+            width: 33.333%;
+            padding: 1rem;
+        }
+
+        .card {
+            cursor: pointer;
+            border: 2px solid rgb(80, 106, 255);
+        }
+
+        .card.yellow {
+            border-color: rgb(255, 217, 0);
+        }
+
+        html.dark .card.yellow {
+            border-color: yellow
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LocalStorage for theme</h1>
+    <input type="text" placeholder="prova">
+    <input type="datetime-local">
+    <button id="setDark">Set Dark Theme</button>
+    <button id="remDark">Remove Dark Theme</button>
+    <div id="content">
+        <!-- albums go here -->
+    </div>
+    <!-- <button onclick="removeKey()">removeItem</button>
+    -->
+    <!-- <script src="webstorage.js"></script> -->
+    <script src="discography.js"></script>
+    <script src="dark-light-theme.js"></script>
+</body>
+
+</html>
